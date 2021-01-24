@@ -1,0 +1,19 @@
+middleware 
+app level
+-app.use
+-next();
+route group level
+-route.use
+-next();
+route level
+-route.get
+-next();
+
+error handling
+-(err,req, res, next)
+-> next(new Error('error message'));
+
+->app level
+app.use((err,req,res,next)={
+res.status(400).send(err.message);
+})

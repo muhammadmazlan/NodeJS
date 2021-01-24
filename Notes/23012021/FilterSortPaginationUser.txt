@@ -1,0 +1,4 @@
+#Filter, Sort, Pagination / User Authntication
+#Mongodb
+
+collection.find({filter}) vs model.find({filter})
