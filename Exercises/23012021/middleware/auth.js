@@ -4,7 +4,7 @@ function auth (req,res,next){
     const authHeader = req.header('Authorization');
     if(authHeader){
         const token = authHeader.replace('Bearer ','');
-        const data = jwt.verify(token,'rbajwtsecret');
+        const data = jwt.verify(token,'userSecret');
         req.user=data;
     }
     next();
