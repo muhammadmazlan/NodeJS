@@ -1,0 +1,18 @@
+#nodeMailer
+- automation
+- aa possible chilli.
+#gracefulshutdown
+
+sending email..
+- Marketing Email, CRM
+- Transaction Email - one to one basis
+
+smtp,imap,pop3-
+smtp -send email.
+
+sendgrid.com
+sendinblue.com
+
+-> mailbox - limitation and block account. - cannot do automation.
+
+cd

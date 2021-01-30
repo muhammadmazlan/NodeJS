@@ -1,0 +1,30 @@
+Multer - File Upload
+can transfer to local path or uploaded to bucket storage
+Content-Type: multipart/form-data
+
+not to app storage.
+Content-Type: multipart/form-data
+
+- memory style
+fieldname: string,
+eoriginalname: string,(filename)
+encoding: string,
+mimetype: string, //
+buffer: Buffer, // 
+size: number(in Bytes)
+
+- simple DiskStorage
+fieldname: string,
+originalname: string,(filename)
+encoding: string,
+mimetype: string,
+destination: string,
+filename: string, (uploaded name)
+path: string(dest + filename)
+size:
+
+- customize DiskStorage
+filename: string,
+originalname: string,
+encoding: string,
+mimetype: string
