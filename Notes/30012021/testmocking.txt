@@ -1,0 +1,12 @@
+#Jest Mocking,
+
+Fake implementation or simulation.
+- 3 party logic, - sendmail.
+- network related actions, isolate features
+- database actions, 3rd party library.
+
+jest.fn() to create a mock function
+mock function have a special .mock property with related data.
+
+need to be inside test.js env.
+
