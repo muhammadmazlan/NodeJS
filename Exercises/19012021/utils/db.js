@@ -1,9 +1,11 @@
-const express = require('express');
-const {MongoClient,ObjectId} = require('mongodb');
+const{MongoClient,ObjectID} = require('mongodb');
 
-const client = new MongoClient('mongodb://localhost:27017');
-const app = express();
-app.use = express.json();
+const client = new MongoClient('mongodb://127.0.0.1:27017',{ useUnifiedTopology: true });
 
-// create task
-app.get()
+const connectdb = client.connect();
+
+async function db(){
+    await connectdb;
+    return client.db('nodeJs');
+}
+module.exports=db;
